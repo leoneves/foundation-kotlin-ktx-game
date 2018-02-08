@@ -6,6 +6,7 @@ buildscript {
         mavenCentral()
         maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
         jcenter()
+        google()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.1'
@@ -73,6 +74,17 @@ project(":ios") {
         compile "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-ios"
         compile "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-ios"
         compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+    }
+}
+
+project(":desktop") {
+    apply plugin: 'kotlin'
+    sourceCompatibility = 1.8
+
+    kotlin {
+        experimental {
+            coroutines 'enable'
+        }
     }
 }
 

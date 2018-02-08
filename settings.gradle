@@ -1,1 +1,2 @@
+include ':desktop'
 include 'android', 'ios', 'core'
