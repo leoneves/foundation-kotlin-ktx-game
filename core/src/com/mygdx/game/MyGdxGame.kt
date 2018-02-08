@@ -42,7 +42,7 @@ class MyGdxGame :  KtxGame<Screen>() {
     }
 
     private fun playMusic() {
-        Gdx.audio.newMusic("theme.ogg".toInternalFile()).apply {
+        Gdx.audio.newMusic("grunge-Street-Game.mp3".toInternalFile()).apply {
             volume = 0.3f
             setOnCompletionListener { play() }
         }.play()

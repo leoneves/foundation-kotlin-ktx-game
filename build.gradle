@@ -65,6 +65,7 @@ project(":ios") {
     apply plugin: "kotlin"
     apply plugin: "robovm"
 
+    configurations { natives }
 
     dependencies {
         compile project(":core")
@@ -74,6 +75,8 @@ project(":ios") {
         compile "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-ios"
         compile "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-ios"
         compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+        compile "com.badlogicgames.ashley:ashley:$ashleyVersion"
+        compile "com.badlogicgames.gdx:gdx-freetype:$gdxVersion"
     }
 }
 
