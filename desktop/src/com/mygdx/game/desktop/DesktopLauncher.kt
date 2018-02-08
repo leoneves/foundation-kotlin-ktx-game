@@ -11,12 +11,12 @@ import com.mygdx.game.screenWidth
 
 fun main(args: Array<String>) {
     LwjglApplication(MyGdxGame(), LwjglApplicationConfiguration().apply {
-        title = "BialJam'17"
+        title = "Yu Yu hakusho"
         width = screenWidth
         height = screenHeight
         resizable = false
         intArrayOf(128, 64, 32, 16).forEach {
-            addIcon("libgdx$it.png", FileType.Internal)
+            addIcon("badlogic.jpg", FileType.Internal)
         }
     })
 }

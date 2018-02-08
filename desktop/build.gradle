@@ -1,6 +1,6 @@
 apply plugin: 'application'
 
-project.ext.assetsDir = new File("../android/assets")
+sourceSets.main.resources.srcDirs += [ rootProject.file('android/assets').absolutePath ]
 sourceSets.main.java.srcDirs = [ "src/" ]
 
 mainClassName = 'com.mygdx.game.desktop.DesktopLauncher'
